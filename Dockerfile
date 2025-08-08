@@ -26,10 +26,10 @@ WORKDIR /app
 COPY --from=build /app/.output/ ./
 
 # Change the port and host
-ENV PORT=8080
+ENV PORT=3000
 ENV HOST=0.0.0.0
 
-EXPOSE 8080
+EXPOSE 3000
 
 USER node
 
